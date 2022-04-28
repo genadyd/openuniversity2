@@ -1,0 +1,13 @@
+{
+    "name": "jobge/open-univesite",
+    "type": "project",
+    "require": {
+        "bramus/router": "^1.6"
+    },
+    "authors": [
+        {
+            "name": "genadyd",
+            "email": "jobgenady@gmail.com"
+        }
+    ]
+}
