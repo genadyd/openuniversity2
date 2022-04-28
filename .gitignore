@@ -1,2 +1,4 @@
 .idea
-vendor
+app/vendor
+app/node_modules
+docker/nginx/logs
