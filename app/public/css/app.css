@@ -11326,3 +11326,13 @@ body {
   font-weight: bold;
   color: #0404C3;
 }
+
+.data-section {
+  background-color: #ebebeb;
+}
+.data-section .inner-section {
+  background-color: #F7F3E9;
+  box-shadow: 0px 6px 9px 5px #919090;
+  border-radius: 6px;
+  width: 100vw;
+}
