@@ -14,6 +14,7 @@ list('title' => $title, 'heading' => $heading) = $general_data;
     <title><?= $title ?></title>
 </head>
 <body>
+<div id="main-wrapper">
 
 
 

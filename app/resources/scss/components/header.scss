@@ -1,0 +1,14 @@
+.main-header{
+  height: 8vh;
+  border-bottom: solid 1px $lines-color;
+  .logo{
+    width: 46px;
+    border: solid 1px $lines-color;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+
+}

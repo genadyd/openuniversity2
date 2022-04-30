@@ -11282,6 +11282,20 @@ textarea.form-control-lg {
   }
 }
 /*Color scheme*/
+.main-header {
+  height: 8vh;
+  border-bottom: solid 1px #0404C3;
+}
+.main-header .logo {
+  width: 46px;
+  border: solid 1px #0404C3;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main-header .logo img {
+  width: 100%;
+}
+
 body {
   background-color: #F7F3E9;
   color: #000;
