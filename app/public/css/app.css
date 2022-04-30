@@ -11283,20 +11283,46 @@ textarea.form-control-lg {
 }
 /*Color scheme*/
 .main-header {
-  height: 8vh;
-  border-bottom: solid 1px #0404C3;
+  height: 16vh;
+  background-color: #ebebeb;
 }
-.main-header .logo {
+.main-header .header-inner {
+  background-color: #F7F3E9;
+  width: 100vw;
+  height: 50%;
+  box-shadow: 0px 6px 9px 5px #919090;
+  border-radius: 6px;
+}
+.main-header .header-inner .logo {
   width: 46px;
   border: solid 1px #0404C3;
   border-radius: 50%;
   overflow: hidden;
 }
-.main-header .logo img {
+.main-header .header-inner .logo img {
   width: 100%;
 }
 
 body {
   background-color: #F7F3E9;
   color: #000;
+}
+
+.rounded-input {
+  outline: none;
+  border: solid 1px #0404C3;
+  height: 2.5em;
+  border-radius: 21px;
+  text-indent: 1em;
+}
+
+.rounded-button {
+  border: solid 1px #0404C3;
+  height: 2.5em;
+  border-radius: 21px;
+  padding: 0 1em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0404C3;
 }

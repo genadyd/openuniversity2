@@ -5,3 +5,20 @@ body{
  background-color: $background-color;
  color: $text-color;
 }
+.rounded-input{
+ outline: none;
+ border: solid 1px $lines-color;
+ height: 2.5em;
+ border-radius: 21px;
+ text-indent: 1em;
+}
+.rounded-button{
+ border: solid 1px $lines-color;
+ height: 2.5em;
+ border-radius: 21px;
+ padding: 0 1em;
+ font-size: 1em;
+ text-transform: uppercase;
+ font-weight: bold;
+ color: $lines-color;
+}

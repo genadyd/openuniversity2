@@ -12,7 +12,7 @@ class ChannelController
         $views = new Views();
         $views->addTemplate('layouts/head');
         $views->addTemplate('components/header');
-        $views->addTemplate('content/channel_content');
+        $views->addTemplate('components/channel_data_section');
         $views->addTemplate('layouts/footer');
         $views->attachData(['title' =>"OU videos service ", 'heading' => "Genady Heading"]);
         $views->attachStyles(['/app.css', 'channel']);
