@@ -1,4 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+@import "vars/vars";
 body{
-  background-color: red;
+ background-color: $background-color;
+ color: $text-color;
 }

@@ -11281,6 +11281,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*Color scheme*/
 body {
-  background-color: red;
+  background-color: #F7F3E9;
+  color: #000;
 }

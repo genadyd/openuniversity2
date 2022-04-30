@@ -9,11 +9,15 @@ class Views implements IViews
     private array $templates;
     private array $template_data;
     private string $templates_dir;
+    private string $styles_dir;
+    private string $styles;
     public function __construct()
     {
         $this->templates = [];
         $this->template_data = []; /* general data for all included templates */
         $this->templates_dir = '../templates/';
+        $this->styles_dir = '/css/';
+        $this->styles = '';
     }
 
     /**
@@ -36,6 +40,18 @@ class Views implements IViews
     }
 
     /**
+     * @param array $styles_urls urls css files
+     * @return string
+     */
+    public function attachStyles(array $styles_urls = []):void
+    {
+        foreach ($styles_urls as $url){
+            $url = preg_replace('/\.[a-z]+$/i','',$url);
+            $this->styles .= '<link rel="stylesheet" href="'.$this->styles_dir.trim($url, '/').'.css"\>';
+        }
+    }
+
+    /**
      * @param array $data
      * set general data for all included templates
      */
@@ -47,6 +63,7 @@ class Views implements IViews
     public function get(): string|array
     {
         ob_start();
+        $styles = $this->styles;
         $general_data = $this->template_data;
         foreach ($this->templates as $template){
             $data = $template['data'];
