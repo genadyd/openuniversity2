@@ -31,7 +31,7 @@ abstract class Api
 
     /**
      * @return array|null
-     * Get data
+     * Get data JSON
      */
     public function getData():string|null
     {
@@ -41,6 +41,11 @@ abstract class Api
             echo 'Message: ' .$e->getMessage();
         }
     }
+
+    /**
+     * @return array|null
+     * Get data array
+     */
     public function getArrayData():array|null
     {
         return json_decode($this->getData(), true) ?? null;
