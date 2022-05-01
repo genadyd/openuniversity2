@@ -16,10 +16,10 @@ class ChannelController
         $views->addTemplate('layouts/head');
         $views->addTemplate('components/header');
         $channel = new Channel();
-        $channel_data = $channel->getData();
+        $channel_data = $channel->getArrayData();
         $views->addTemplate('components/channel_data_section', $channel_data);
         $playlists = new Playlists();
-        $playlists_array = $playlists->getData()['items'];
+        $playlists_array = $playlists->getArrayData()['items'];
         foreach ($playlists_array as $playlist_data) {
             $views->addTemplate('components/playlists_section', $playlist_data);
         }

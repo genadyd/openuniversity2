@@ -3,10 +3,6 @@
         <div class="logo">
             <img src="/images/logo.png">
         </div>
-        <form class="d-flex">
-            <input class="search-input rounded-input me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="rounded-button">Search</button>
-        </form>
         <button class="all-videos-button rounded-button">all videos</button>
     </div>
 </section>

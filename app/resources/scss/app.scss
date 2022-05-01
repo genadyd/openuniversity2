@@ -5,13 +5,6 @@ body{
  background-color: $background-color;
  color: $text-color;
 }
-.rounded-input{
- outline: none;
- border: solid 1px $lines-color;
- height: 2.5em;
- border-radius: 21px;
- text-indent: 1em;
-}
 .rounded-button{
  border: solid 1px $lines-color;
  height: 2.5em;
@@ -26,7 +19,6 @@ body{
  background-color: #ebebeb;
  .inner-section{
   background-color: $background-color;
-  box-shadow: 0px 6px 9px 5px $shadow-color;
   border-radius: 6px;
   width: 100vw;
  }

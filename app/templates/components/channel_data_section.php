@@ -7,7 +7,7 @@ list('title' => $title, 'description' => $description, 'thumbnails' => $thumbnai
         <div class="channel_logo mx-2">
             <img src="<?= $thumbnails['default']['url'] ?>" alt="">
         </div>
-        <div>
+        <div class="mx-3">
             <h2><?= $title ?></h2>
             <p><?= $description ?></p>
         </div>

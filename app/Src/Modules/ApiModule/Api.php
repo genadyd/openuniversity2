@@ -33,14 +33,17 @@ abstract class Api
      * @return array|null
      * Get data
      */
-    public function getData():array|null
+    public function getData():string|null
     {
         try{
-            $json = file_get_contents($this->createUrl());
-            return json_decode($json, true);
+            return file_get_contents($this->createUrl());;
         }catch (Exception $e){
             echo 'Message: ' .$e->getMessage();
         }
+    }
+    public function getArrayData():array|null
+    {
+        return json_decode($this->getData(), true) ?? null;
     }
 
 
