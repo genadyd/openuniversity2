@@ -16,7 +16,7 @@ abstract class Api
      */
     public function __construct(protected string|null $additional_param = null )
     {
-        require_once "../config/config.php";/*get config data*/
+        require "../config/config.php";/*get config data*/
         /** @var TYPE_NAME $api_config */
         $this->config_data = $api_config;
     }
