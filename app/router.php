@@ -2,6 +2,7 @@
 
 
 use App\Src\Controllers\ApiController;
+use App\Src\Controllers\VideoController;
 use Bramus\Router\Router;
 use App\Src\Modules\ApiModule\Channel;
 
@@ -16,6 +17,10 @@ $router->get('/api/playlist/{[a-zA-Z\d_-]+}/{[a-z\d]+}', function($playlist_id, 
         $controller = new ApiController();
         $controller->getPlaylistVideos($playlist_id);
     }
+});
+$router->get('video/{[a-zA-Z\d_-]+}', function($video_id) {
+    $controller = new VideoController();
+    $controller->index($video_id);
 });
 
 

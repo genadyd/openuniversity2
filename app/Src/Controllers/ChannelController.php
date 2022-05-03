@@ -24,7 +24,7 @@ class ChannelController
             $views->addTemplate('components/playlists_section', $playlist_data);
         }
         $views->addTemplate('layouts/footer');
-        $views->attachData(['title' => "OU videos service ", 'heading' => "Genady Heading"]);
+        $views->attachData(['title' => "OU videos service "]);
         $views->attachStyles(['/app.css', 'channel']);
         $views->attachScripts(['/app'], true);
         echo($views->get());
