@@ -8,7 +8,6 @@ class VideoCard extends MainHtmlComponent {
             ? data.thumbnails.medium.url
             : '/images/youtube_def.jpg'
 
-
         const description = Helpers.getLink(data.description)
 
         return `<div class="one-card d-flex justify-content-between flex-column my-2 mx-1" >
@@ -16,7 +15,7 @@ class VideoCard extends MainHtmlComponent {
                         <div class="card-body">
                             <h6 class="card-title">${data.title}</h6>
                             <p class="card-text">${description}</p>
-                            <button href="#" class="btn btn-primary">Play Video</button>
+                            <a href="/video/${data.resourceId.videoId}" class="btn btn-primary">Play Video</a>
                         </div>
                     </div>`
     }

@@ -416,7 +416,7 @@ var VideoCard = /*#__PURE__*/function (_MainHtmlComponent) {
     value: function render(data) {
       var image_url = data.thumbnails.hasOwnProperty('medium') ? data.thumbnails.medium.url : '/images/youtube_def.jpg';
       var description = _Helpers_Helpers__WEBPACK_IMPORTED_MODULE_1__["default"].getLink(data.description);
-      return "<div class=\"one-card d-flex justify-content-between flex-column my-2 mx-1\" >\n                    <img src=\"".concat(image_url, "\" class=\"card-img-top\" alt=\"").concat(data.title, "\">\n                        <div class=\"card-body\">\n                            <h6 class=\"card-title\">").concat(data.title, "</h6>\n                            <p class=\"card-text\">").concat(description, "</p>\n                            <button href=\"#\" class=\"btn btn-primary\">Play Video</button>\n                        </div>\n                    </div>");
+      return "<div class=\"one-card d-flex justify-content-between flex-column my-2 mx-1\" >\n                    <img src=\"".concat(image_url, "\" class=\"card-img-top\" alt=\"").concat(data.title, "\">\n                        <div class=\"card-body\">\n                            <h6 class=\"card-title\">").concat(data.title, "</h6>\n                            <p class=\"card-text\">").concat(description, "</p>\n                            <a href=\"/video/").concat(data.resourceId.videoId, "\" class=\"btn btn-primary\">Play Video</a>\n                        </div>\n                    </div>");
     }
   }]);
 
@@ -459,6 +459,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./resources/scss/channel.scss ***!
   \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/scss/video_player.scss":
+/*!******************************************!*\
+  !*** ./resources/scss/video_player.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1343,6 +1356,7 @@ try {
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/public/js/app": 0,
+/******/ 			"public/css/video_player": 0,
 /******/ 			"public/css/channel": 0,
 /******/ 			"public/css/app": 0
 /******/ 		};
@@ -1394,9 +1408,10 @@ try {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["public/css/channel","public/css/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["public/css/channel","public/css/app"], () => (__webpack_require__("./resources/scss/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/css/channel","public/css/app"], () => (__webpack_require__("./resources/scss/channel.scss")))
+/******/ 	__webpack_require__.O(undefined, ["public/css/video_player","public/css/channel","public/css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["public/css/video_player","public/css/channel","public/css/app"], () => (__webpack_require__("./resources/scss/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["public/css/video_player","public/css/channel","public/css/app"], () => (__webpack_require__("./resources/scss/channel.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/css/video_player","public/css/channel","public/css/app"], () => (__webpack_require__("./resources/scss/video_player.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
