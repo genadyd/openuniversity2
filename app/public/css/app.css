@@ -11284,10 +11284,10 @@ textarea.form-control-lg {
 /*Color scheme*/
 .main-header {
   height: 16vh;
-  background-color: #ebebeb;
+  background-color: #f9f9f9;
 }
 .main-header .header-inner {
-  background-color: #F7F3E9;
+  background-color: #FFF;
   width: 100vw;
   height: 50%;
   border-radius: 6px;
@@ -11303,7 +11303,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background-color: #F7F3E9;
+  background-color: #FFF;
   color: #000;
 }
 
@@ -11319,10 +11319,10 @@ body {
 }
 
 .data-section {
-  background-color: #ebebeb;
+  background-color: #f9f9f9;
 }
 .data-section .inner-section {
-  background-color: #F7F3E9;
+  background-color: #FFF;
   border-radius: 6px;
   width: 100vw;
 }

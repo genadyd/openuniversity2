@@ -1,0 +1,30 @@
+.one-card{
+  box-sizing: border-box;
+  .thumbnail{
+    text-align: center;
+    margin-top: 1em;
+    img{
+      max-width: 90% ;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .one-card{
+    width: 100%;
+  }
+}
+@media (min-width: 768px){
+  .one-card{
+    width: 46vw;
+  }
+}
+@media (min-width: 1200px) {
+  .one-card{
+    width: 35vw;
+  }
+}
+@media (min-width: 1400px) {
+  .one-card{
+    width: 23.5vw;
+  }
+}

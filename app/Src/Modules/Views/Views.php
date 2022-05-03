@@ -11,13 +11,18 @@ class Views implements IViews
     private string $templates_dir;
     private string $styles_dir;
     private string $styles;
+    private string $scripts_dir;
+    private string $scripts;
+
     public function __construct()
     {
         $this->templates = [];
         $this->template_data = []; /* general data for all included templates */
         $this->templates_dir = '../templates/';
         $this->styles_dir = '/css/';
+        $this->scripts_dir = '/js/';
         $this->styles = '';
+        $this->scripts = '';
     }
 
     /**
@@ -45,9 +50,22 @@ class Views implements IViews
      */
     public function attachStyles(array $styles_urls = []):void
     {
-        foreach ($styles_urls as $url){
-            $url = preg_replace('/\.[a-z]+$/i','',$url);
-            $this->styles .= '<link rel="stylesheet" href="'.$this->styles_dir.trim($url, '/').'.css"\>';
+        if(count($styles_urls) >0 ) {
+            foreach ($styles_urls as $url) {
+                $url = preg_replace('/\.[a-z]+$/i', '', $url);
+                $this->styles .= '<link rel="stylesheet" href="' . $this->styles_dir . trim($url, '/') . '.css"\>';
+            }
+        }
+    }
+
+    public function attachScripts(array $scripts_urls = [], bool $as_module = false):void
+    {
+        if(count($scripts_urls) > 0) {
+            foreach ($scripts_urls as $url) {
+                $url = preg_replace('/\.[a-z]+$/i', '', $url);
+                $is_module = $as_module ? 'type="module"':'';
+                $this->scripts .= '<script  src="' . $this->scripts_dir . trim($url, '/').'.js" '.$is_module.' ></script>';
+            }
         }
     }
 
@@ -64,6 +82,7 @@ class Views implements IViews
     {
         ob_start();
         $styles = $this->styles;
+        $scripts = $this->scripts;
         $general_data = $this->template_data;
         foreach ($this->templates as $template){
             $data = $template['data'];

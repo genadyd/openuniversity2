@@ -1,1 +1,30 @@
-
+.playlist-videos-section .one-card {
+  box-sizing: border-box;
+}
+.playlist-videos-section .one-card .thumbnail {
+  text-align: center;
+  margin-top: 1em;
+}
+.playlist-videos-section .one-card .thumbnail img {
+  max-width: 90%;
+}
+@media (min-width: 576px) {
+  .playlist-videos-section .one-card {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .playlist-videos-section .one-card {
+    width: 46vw;
+  }
+}
+@media (min-width: 1200px) {
+  .playlist-videos-section .one-card {
+    width: 35vw;
+  }
+}
+@media (min-width: 1400px) {
+  .playlist-videos-section .one-card {
+    width: 23.5vw;
+  }
+}

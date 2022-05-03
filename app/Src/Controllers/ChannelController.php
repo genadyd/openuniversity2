@@ -26,6 +26,7 @@ class ChannelController
         $views->addTemplate('layouts/footer');
         $views->attachData(['title' => "OU videos service ", 'heading' => "Genady Heading"]);
         $views->attachStyles(['/app.css', 'channel']);
+        $views->attachScripts(['/app'], true);
         echo($views->get());
     }
 
