@@ -22,15 +22,15 @@
 > 
 > docker-compose
 
-###Composer
+### Composer
 
 >bramus/router
 > 
 > autoload
-###Js/scss compilation:
+### Js/scss compilation:
 >laravel-mix
 
-###Install and Launch terminal commands:
+### Install and Launch terminal commands:
 
 1. git clone https://github.com/genadyd/openuniversity.git
 
