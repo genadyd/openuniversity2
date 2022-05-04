@@ -1,6 +1,5 @@
 <?php
 
-
 /** @var TYPE_NAME $data */
 
 use App\Src\Helpers\Helpers;
@@ -21,8 +20,7 @@ $description = Helpers::liksReplaser($description);
             </div>
         </div>
         <div class="button-area text-end my-2">
-            <button class="rounded-button ">Go to Videos</button>
+            <button type="button" class="btn btn-primary">Go to Videos</button>
         </div>
-
     </div>
 </section>

@@ -11307,17 +11307,6 @@ body {
   color: #000;
 }
 
-.rounded-button {
-  border: solid 1px #0404C3;
-  height: 2.5em;
-  border-radius: 21px;
-  padding: 0 1em;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #0404C3;
-}
-
 .data-section {
   background-color: #f9f9f9;
 }
