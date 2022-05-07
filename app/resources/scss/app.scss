@@ -1,15 +1,28 @@
 @import "~bootstrap/scss/bootstrap";
 @import "vars/vars";
 @import "components/header";
-body{
- background-color: $background-color;
- color: $text-color;
-}
-.data-section{
- background-color: #f9f9f9;
- .inner-section{
+
+body {
   background-color: $background-color;
-  border-radius: 6px;
-  width: 100vw;
- }
+  color: $text-color;
+}
+
+.data-section {
+  background-color: #f9f9f9;
+
+  .inner-section {
+    background-color: $background-color;
+    border-radius: 6px;
+    width: 100vw;
+  }
+
+  &.playlist-data {
+    .inner-section {
+      .playlist-data-section{
+        p{
+          width: 70%;
+        }
+      }
+    }
+  }
 }
