@@ -2,11 +2,11 @@ version: "3.7"
 services:
   web:
     image: nginx:latest
-    container_name: "nginx_video"
+    container_name: "nginx_video-2"
     restart: unless-stopped
     tty: true
     ports:
-      - "8282:80"
+      - "8285:80"
     volumes:
       - ./app:/var/www/html
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
@@ -20,7 +20,7 @@ services:
     build:
       context: ./
       dockerfile: ./docker/php/Dockerfile
-    container_name: php-video
+    container_name: php-video-2
     working_dir: /var/www/html
     tty: true
     volumes:
